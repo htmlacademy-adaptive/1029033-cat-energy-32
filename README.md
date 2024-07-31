@@ -2,6 +2,7 @@
 
 * Студент: [Антон Трочук](https://up.htmlacademy.ru/adaptive/32/user/1029033).
 * Наставник: [Николай Колганов](https://htmlacademy.ru/profile/id794007).
+* Мой проект: .
 
 ---
 
