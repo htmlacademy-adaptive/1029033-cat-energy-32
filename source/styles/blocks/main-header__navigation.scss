@@ -5,3 +5,15 @@
 .navigation {
   font-family: $second-font;
 }
+
+.navigation-toggle--open {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/wrapper.svg");
+}
+
+.navigation-toggle--close {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/wrapper_close.svg");
+}

@@ -1,3 +1,7 @@
+.show-more {
+  background-image: url("../../icons/show_more.svg");
+}
+
 .show-more-headline-subtitle {
   color: #111111;
   text-transform: uppercase;
@@ -10,4 +14,8 @@
 .show-more-headline-button {
   color: $special_dark-grey;
   text-transform: uppercase;
+}
+
+.additional-products-gift {
+  background-image: url("../../icons/icon_gift.svg");
 }
