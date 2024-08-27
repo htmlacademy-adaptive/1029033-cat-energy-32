@@ -1,18 +1,24 @@
-.preview__content {
+.preview-content {
   width: 320px;
   height: 302px;
   background-image: url("../../images/index_background_desktop_green@2x.jpg");
-  background-color: #68b738;
+  background-color: $basic_green;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.preview__content__title {
+.preview-title {
   color: #ffffff;
 }
 
-.preview__content__text {
+.preview-text {
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.preview-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $basic_green;
 }

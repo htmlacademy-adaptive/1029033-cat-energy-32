@@ -1,3 +1,13 @@
-.headline__subtitle {
-  color: #000000;
+.show-more-headline-subtitle {
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.show-more-headline-text {
+  color: $special_dark-grey;
+}
+
+.show-more-headline-button {
+  color: $special_dark-grey;
+  text-transform: uppercase;
 }

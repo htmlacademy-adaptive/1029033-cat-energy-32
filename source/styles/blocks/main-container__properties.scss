@@ -1,27 +1,39 @@
-.weight-loss {
+.main-container__properties {
+  margin: 0;
+}
+
+.properties-weight-gain {
   background-color: #f2f2f2;
 }
 
-.weight-loss__head-subtitle {
+.properties-weight-gain-subtitle {
   text-transform: uppercase;
 }
 
-.weight-loss__footer__link {
+.properties-weight-gain-link {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
 }
 
-.weight-gain {
+.properties-weight-gain-text {
+  color: $special_dark-grey;
+}
+
+.properties-weight-loss {
   background-color: #f2f2f2;
 }
 
-.weight-gain__head-subtitle {
+.properties-weight-loss-subtitle {
   text-transform: uppercase;
 }
 
-.weight-gain__footer__link {
+.properties-weight-loss-link {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+}
+
+.properties-weight-loss-text {
+  color: $special_dark-grey;
 }

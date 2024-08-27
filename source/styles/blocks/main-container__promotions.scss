@@ -1,3 +1,13 @@
-.promotions__subtitle {
+.promotions-subtitle {
   color: #000000;
+}
+
+.promotions-subscribe-input {
+  text-transform: uppercase;
+}
+
+.promotions-subscribe-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $basic_green;
 }

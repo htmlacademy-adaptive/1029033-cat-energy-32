@@ -6,10 +6,10 @@
 
 
 /* BLOCKS */
-@import "./blocks/printing.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-header__navigation.scss";
+@import "./blocks/navigation__wrapper.scss";
 @import "./blocks/main-container__promo.scss";
 @import "./blocks/main-container__properties.scss";
 @import "./blocks/main-container__advantages.scss";
@@ -17,11 +17,9 @@
 @import "./blocks/main-container__cooperation.scss";
 @import "./blocks/main-container__catalog";
 @import "./blocks/catalog__card";
-@import "./blocks/card-item__description";
 @import "./blocks/main-container__show-more.scss";
 @import "./blocks/main-container__additional-products.scss";
 @import "./blocks/main-container__promotions.scss";
 @import "./blocks/main-container__map.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/footer__social-network.scss";
 

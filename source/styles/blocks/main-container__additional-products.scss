@@ -1,3 +1,29 @@
-.additional-products__subtitle {
+
+.additional-products-subtitle {
   color: #000000;
 }
+
+
+.additional-products-item-subtitle {
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+}
+
+.additional-products-item-desc-text {
+  color: $special_dark-grey;
+}
+
+.additional-products-item-button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $basic_green;
+}
+
+.additional-products-gift {
+  background-color: $basic_green;
+}
+
+.additional-products-gift-text {
+  color: #ffffff;
+}
+
