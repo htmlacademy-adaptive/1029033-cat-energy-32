@@ -1,18 +1,14 @@
+.catalog {
+  margin: 0 auto;
+}
+
 .catalog__title {
   color: #000000;
+  margin: 0;
+  padding: 27px 20px 41px;
+  border-bottom: 1px solid #ebebeb;
 }
 
-.card-description-subtitle {
-  color: $special_dark-grey-2;
-}
-
-.card-caption-text {
+.card__caption-text {
   color: $special_dark-grey;
 }
-
-.card-button {
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: $basic_green;
-}
-

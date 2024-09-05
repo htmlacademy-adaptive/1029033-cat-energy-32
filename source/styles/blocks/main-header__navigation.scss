@@ -1,19 +1,8 @@
-.main-header__navigation {
-  margin: 0;
-}
-
 .navigation {
   font-family: $second-font;
 }
 
-.navigation-toggle--open {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/wrapper.svg");
-}
-
-.navigation-toggle--close {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/wrapper_close.svg");
+.navigation__wrapper {
+  display: flex;
+  gap: 33px;
 }

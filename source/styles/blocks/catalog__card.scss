@@ -1,3 +1,130 @@
 .card__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 60px;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.card__item {
+  padding: 20px 20px 25px;
+  display: grid;
+  grid-template-columns: auto 140px;
+  grid-template-rows: auto auto;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 324px;
+    height: 511px;
+    padding: 29px 37px 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 210px auto auto;
+    border: none;
+    background-image: linear-gradient(#ffffff 25%, #f2f2f2 75%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 511px;
+    padding: 0 38px 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 210px auto auto;
+  }
+}
+
+.card__caption {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.card__caption-text {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 10px;
+  }
+}
+
+.card__button {
+  margin-top: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $basic_green;
+  border: 1px solid $basic_green;
+  padding: 10px 109px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3 / 1;
+    padding: 10px 94px;
+    margin: 0;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    padding: 10px 53px;
+  }
+}
+
+.card__description {
+  @media (min-width: $tablet-width) {
+    grid-area: 2 / 1;
+    width: 250px;
+    height: 157px;
+    margin-bottom: 32px;
+  }
+}
+
+.card__description-subtitle {
+  margin: 0;
+  margin-bottom: 14px;
+  color: $special_dark-grey-2;
+  width: 76px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    padding: 22px 55px 0 60px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    padding: 12px 14px 0 15px;
+    text-align: center;
+  }
+}
+
+.side-text {
+  text-align: right;
+}
+
+.card__picture {
+  place-self: center center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1 / 1;
+  }
 }

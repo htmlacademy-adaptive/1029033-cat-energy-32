@@ -1,13 +1,53 @@
 .footer {
   background-color: #f2f2f2;
+  padding: 40px 20px;
 }
 
-.footer-social-network-list {
+.footer__image {
+  margin: 0 76px 20px;
+}
+
+.footer__hr {
+  margin: 0;
+  border: 1px solid #d9d9d9;
+}
+
+.footer__social-network-list {
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
-.footer-network-academy-link {
+.footer__network-academy {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__network-academy-link {
   text-decoration: none;
   color: $special_dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .footer__image {
+    margin: 0;
+  }
+
+  .footer__hr {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__network-academy {
+    margin: 0;
+  }
+}
