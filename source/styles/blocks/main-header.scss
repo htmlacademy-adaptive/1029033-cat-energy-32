@@ -23,6 +23,7 @@
   background-image: url("../../icons/wrapper.svg");
   border: none;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .main-header-toggle--close {
@@ -32,6 +33,21 @@
   border: none;
   background-color: #ffffff;
   display: none;
+}
+
+.main-header__picture-icon {
+  width: 33px;
+  height: 38px;
+}
+
+.main-header__picture-text {
+  width: 101px;
+  height: 18px;
+}
+
+.logo-text {
+  padding-left: 20%;
+  padding-right: 65px;
 }
 
 @media (min-width: $tablet-width) {

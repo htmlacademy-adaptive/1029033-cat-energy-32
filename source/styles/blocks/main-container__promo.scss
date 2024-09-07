@@ -32,7 +32,7 @@
 
 .preview__image {
   position: absolute;
-  top: 62.5%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -42,7 +42,8 @@
   color: #ffffff;
   background-color: $basic_green;
   border: 1px solid $basic_green;
-  padding: 10px 63px;
+  min-width: 280px;
+  height: 40px;
   margin: 0 20px;
 }
 
