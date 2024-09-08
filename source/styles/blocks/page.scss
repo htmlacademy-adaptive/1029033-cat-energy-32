@@ -4,4 +4,9 @@
 
 .page__body {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    margin: 0 auto;
+  }
 }

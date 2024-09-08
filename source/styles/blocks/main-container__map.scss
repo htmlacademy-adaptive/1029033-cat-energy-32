@@ -1,3 +1,23 @@
 .cooperation__subtitle {
   color: #000000;
 }
+
+.main-container__map-picture {
+  width: 320px;
+  height: 362px;
+}
+
+.main-container__map {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+  }
+}
+

@@ -3,15 +3,24 @@
 }
 
 .example {
-  padding: 25px 20px 40px;
+  padding: 25px 20px 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 101px;
+  }
 }
 
 .example__subtitle {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 10px 60px;
+  }
 }
 
 .example__relationship-subtitle {
+  text-transform: uppercase;
   text-align: center;
   margin: 0;
   min-width: 124px;
@@ -26,18 +35,46 @@
 
 .example__text {
   color: $special_dark-grey;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+    margin-bottom: 55px;
+  }
 }
 
 .example__relationship {
   display: flex;
+  justify-content: space-between;
   gap: 32px;
   position: relative;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+    justify-content: start;
+    gap: 43;
+  }
 }
 
 .example__relationship-text {
   color: $special_dark-grey;
+}
+
+.relationship-subtitle-left {
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+    padding: 15px 56px 20px;
+  }
+}
+
+.relationship-subtitle-right {
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    min-height: 72px;
+    padding: 15px 29px 20px;
+  }
 }
 
 .relationship-text-left {
@@ -48,6 +85,16 @@
   left: 22px;
   background-color: #eaeaea;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    min-height: 30px;
+    top: 55px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .relationship-text-right {
@@ -58,12 +105,32 @@
   left: 174px;
   background-color: #eaeaea;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    min-height: 27px;
+    top: 58px;
+    left: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .example__expenses-subtitle {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 174px;
+    text-align: right;
+    margin-right: 12px;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
 }
 
 .example__slider {
@@ -141,6 +208,13 @@
 
 
 @media (min-width: $tablet-width) {
+  .example__relationship-block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 68px;
+  }
+
   .example__relationship-text {
     font-size: 14px;
     line-height: 14px;
@@ -157,7 +231,7 @@
   }
 
   .main-container__example {
-    background-image: linear-gradient(#ffffff 55%, #eaeaea 50%);
+    background-image: linear-gradient(#ffffff 57%, #eaeaea 43%);
   }
 
   .example__slider {
@@ -238,19 +312,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example__block {
+    margin-right: 225px;
+  }
+
   .main-container__example {
     padding: 0 110px;
+    display: flex;
+    background-image: linear-gradient(#ffffff 22.5%, #eaeaea 22.5% 77.5%);
   }
 
   .example__subtitle {
     width: 325px;
+    margin-top: 0;
     margin-bottom: 146px;
+    margin-left: 0;
   }
 
   .example__text {
     margin: 0;
     margin-bottom: 69px;
     width: 433px;
+  }
+
+  .example__relationship-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__relationship {
+    margin-left: 0;
+    margin-bottom: 55px;
   }
 
   .relationship-text-left {
@@ -282,30 +374,21 @@
     text-align: center;
     margin: 0;
     min-width: 102px;
-    min-height: 37px;
+    height: 37px;
     border: 1px solid #cdcdcd;
     border-radius: 4px;
-    box-sizing: border-box;
-    padding: 15px 30px 11px;
-  }
-
-  .example__relationship-subtitle {
-    text-align: center;
-    margin: 0;
-    min-width: 162px;
-    min-height: 77px;
-    border: 1px solid #cdcdcd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding: 15px 57px 20px;
+    padding: 15px 30px 20px;
   }
 
   .example__expenses-subtitle {
     margin: 0;
-    width: 327px;
+    min-width: 330px;
     text-align: left;
   }
 
+  .example__expenses-subtitle-text {
+    margin-left: 63px;
+  }
 
   .example__slider {
     width: 560px;

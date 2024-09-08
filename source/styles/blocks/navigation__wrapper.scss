@@ -1,6 +1,21 @@
 .wrapper {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 18px 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 14px 0 16px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .wrapper-link--active {
+    color: #000000;
+  }
 }
 
 .wrapper__link {
@@ -10,9 +25,11 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+  }
+}
 
-    .catalog-text {
-      color: #111111;
-    }
+.wrapper-link-catalog {
+  @media (min-width: $desktop-width) {
+    color: #000000;
   }
 }

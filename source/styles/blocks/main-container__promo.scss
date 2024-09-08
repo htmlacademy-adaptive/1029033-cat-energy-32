@@ -74,17 +74,18 @@
   }
 
   .preview__button {
+    min-width: 224px;
+    height: 54px;
+    padding: 14px 26px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: $basic_green;
     border: 1px solid $basic_green;
-    padding: 14px 26px;
     margin: 0;
     position: absolute;
     top: 295px;
     left: 120px;
     z-index: 1;
-    box-sizing: border-box;
   }
 
   .preview__image {
@@ -116,7 +117,7 @@
 
   .preview__content {
     position: relative;
-    padding: 110px 0 372px 80px;
+    padding: 120px 0 368px 80px;
     min-height: 180px;
 
     &::after {
@@ -125,15 +126,15 @@
       height: 694px;
       background-image: url("../../images/hero-background-desktop@2x.jpg");
       position: absolute;
-      top: -19%;
-      right: -10%;
+      top: -16%;
+      right: -10.5%;
       z-index: -1;
     }
   }
 
   .preview__image {
-    top: 42%;
-    left: 59.5%;
+    top: 42.5%;
+    left: 60%;
   }
 
   .preview__title {
@@ -147,7 +148,7 @@
 
   .preview__button {
     position: absolute;
-    top: 342px;
+    top: 350px;
     left: 80px;
   }
 }
