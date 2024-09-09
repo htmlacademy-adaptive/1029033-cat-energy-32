@@ -1,13 +1,33 @@
 .wrapper {
   list-style: none;
   padding: 0;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: auto;
+  min-width: 320px;
+  height: 198px;
+  margin: 0;
+  gap: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 18px 0 16px;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 0;
+    gap: 33;
   }
 
   @media (min-width: $desktop-width) {
     margin: 14px 0 16px;
+    background-color: transparent;
   }
 }
 
@@ -15,6 +35,18 @@
 @media (min-width: $desktop-width) {
   .wrapper-link--active {
     color: #000000;
+  }
+}
+
+.wrapper__item {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 

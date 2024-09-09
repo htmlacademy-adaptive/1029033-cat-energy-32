@@ -36,11 +36,11 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <button class="main-header__toggle main-header-toggle--close" type="button">
+    <button class="main-header__toggle main-header-toggle--close toggleclose" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
 
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation closenav">
       <ul class="navigation__wrapper wrapper">
         <li class="wrapper__item">
           <a class="wrapper__link wrapper-link-catalog wrapper-link--active subtitle-text-wrapper" href="index.html">
@@ -382,6 +382,23 @@
       <img src="images/logo_html.svg" width="27" height="34" alt="Логотип HTML Академии">
     </div>
   </footer>
+
+  <script>
+    let toggleOpen = document.querySelector('.main-header-toggle--open');
+    let toggleClose = document.querySelector('.main-header-toggle--close');
+    let navOpen = document.querySelector('.main-header__navigation');
+    toggleOpen.onclick = function () {
+      toggleOpen.classList.add('toggleclose');
+      toggleClose.classList.remove('toggleclose');
+      navOpen.classList.remove('closenav');
+    }
+
+    toggleClose.onclick = function () {
+      toggleOpen.classList.remove('toggleclose');
+      toggleClose.classList.add('toggleclose');
+      navOpen.classList.add('closenav');
+    }
+  </script>
 </body>
 
 </html>

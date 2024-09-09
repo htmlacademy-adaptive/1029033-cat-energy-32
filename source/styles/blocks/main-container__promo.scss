@@ -111,7 +111,8 @@
 
 @media (min-width: $desktop-width) {
   .preview {
-    margin: 0 110px;
+    width: 1200;
+    margin: 0 auto;
     min-height: 550px;
   }
 
@@ -122,19 +123,20 @@
 
     &::after {
       content: "";
+      display: inline-block;
       width: 720px;
       height: 694px;
       background-image: url("../../images/hero-background-desktop@2x.jpg");
       position: absolute;
       top: -16%;
-      right: -10.5%;
+      right: -9%;
       z-index: -1;
     }
   }
 
   .preview__image {
-    top: 42.5%;
-    left: 60%;
+    top: 43%;
+    left: 59%;
   }
 
   .preview__title {
