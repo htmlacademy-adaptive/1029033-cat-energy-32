@@ -8,8 +8,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    height: 50px;
-    margin: 25px 34px 0 30px;
+    min-height: 50px;
+    margin: 17px 34px 0 30px;
     border-bottom: none;
     display: flex;
     justify-content: start;

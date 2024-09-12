@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .preview__content {
@@ -16,6 +21,7 @@
   @media (min-width: $tablet-width) {
     background-image: none;
     margin: 0;
+    padding-bottom: 565px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,7 +69,7 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
-    padding: 65px 0 0 120px;
+    padding: 58px 0 0 120px;
     width: 416px;
     text-align: left;
   }
@@ -132,7 +138,7 @@
     border: 1px solid $basic_green;
     margin: 0;
     position: absolute;
-    top: 295px;
+    top: 287px;
     left: 120px;
     z-index: 1;
   }

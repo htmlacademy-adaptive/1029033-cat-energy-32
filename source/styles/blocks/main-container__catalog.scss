@@ -2,7 +2,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 74px;
+    padding-bottom: 66px;
+    width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +21,7 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 84px;
+    padding: 55px 0 95px;
     border-bottom: none;
   }
 

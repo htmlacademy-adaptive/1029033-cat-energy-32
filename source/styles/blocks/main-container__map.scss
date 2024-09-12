@@ -1,5 +1,8 @@
-.cooperation__subtitle {
-  color: #000000;
+.main-container__map-block {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .main-container__map-iframe {
@@ -7,9 +10,11 @@
   min-height: 362px;
   border: none;
   display: block;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
