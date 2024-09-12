@@ -23,7 +23,6 @@
         <img class="main-header__image" src="images/logo_icon.svg" width="33" height="38" alt="Логотип кэт энерджи">
       </picture>
     </a>
-
     <a class="main-header__link logo-text" href="#">
       <picture class="main-header__picture-text">
         <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_desktop.svg">
@@ -31,24 +30,23 @@
         <img class="main-header__image" src="images/logo_text.svg" width="101" height="18" alt="Надпись кэт энерджи">
       </picture>
     </a>
-
-    <button class="main-header__toggle main-header-toggle--open" type="button">
+    <button class="main-header__toggle main-header__toggle--open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
 
-    <button class="main-header__toggle main-header-toggle--close toggleclose" type="button">
+    <button class="main-header__toggle main-header__toggle--close toggleclose" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
 
-    <nav class="main-header__navigation navigation closenav">
+    <nav class="main-header__navigation navigation">
       <ul class="navigation__wrapper wrapper">
         <li class="wrapper__item">
-          <a class="wrapper__link wrapper-link-catalog wrapper-link--active subtitle-text-wrapper" href="index.html">
+          <a class="wrapper__link wrapper-link-catalog subtitle-text-wrapper" href="index.html">
             Главная
           </a>
         </li>
         <li class="wrapper__item">
-          <a class="wrapper__link wrapper-link-catalog subtitle-text-wrapper" href="catalog.html">
+          <a class="wrapper__link wrapper-link-catalog wrapper__link--active subtitle-text-wrapper" href="catalog.html">
             Каталог продукции
           </a>
         </li>
@@ -335,51 +333,52 @@
         <label class="visually-hidden" for="input-subscribe">
           Введите ваш e-mail
         </label>
-        <input class="promotions-subscribe__input input-text" type="email" name="email" id="input-subscribe" placeholder="кuklachev@gmail.com" required>
-        <button class="promotions-subscribe__button text-input-button" type="submit">
+        <input class="promotions__subscribe-input input-text" type="email" name="email" id="input-subscribe" placeholder="кuklachev@gmail.com" required>
+        <button class="promotions__subscribe-button text-input-button" type="submit">
           Подписаться
         </button>
       </form>
     </section>
-    <article class="main-container__cooperation cooperation">
-      <h3 class="cooperation__subtitle secondary-subtitle-normal">приглашаем к сотрудничеству дилеров!</h3>
-      <address class="cooperation__address">
-        <a class="cooperation__address-link explaining-text-normal" href="#">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </a>
-      </address>
-    </article>
     <section class="main-container__map">
       <h3 class="visually-hidden">Местоположение на карте</h3>
-      <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/location_desktop@1x.jpg 1x, images/location_desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/location_tablet@1x.jpg 1x, images/location_tablet@2x.jpg 2x">
-        <img class="main-container__map-image" src="images/location@1x.png" srcset="images/location@2x.png" width="320" height="362" alt="Местоположение на карте">
-      </picture>
+      <article class="main-container__map-cooperation cooperation">
+        <div class="cooperation__block cooperation-catalog">
+          <h3 class="cooperation__subtitle secondary-subtitle-normal">приглашаем<br> к сотрудничеству дилеров!</h3>
+          <address class="cooperation__address">
+            <a class="cooperation__address-link explaining-text-normal" href="#">
+              ул. Большая Конюшенная, д. 19/8 <span class="cooperation__address-link-text">Санкт-Петербург</span>
+            </a>
+          </address>
+        </div>
+      </article>
+      <iframe class="main-container__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </iframe>
     </section>
   </main>
   <footer class="footer">
-    <img class="footer__image" src="images/logo_text_mobile.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
-    <hr class="footer__hr">
-    <div class="footer__social-network">
-      <ul class="footer__social-network-list">
-        <li class="footer__social-network-item ">
-          <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип Вконтакте">
-        </li>
-        <li class="footer__social-network-item">
-          <img src="images/youtube.svg" width="28" height="22" alt="Логотип Ютуба">
-        </li>
-        <li class="footer__social-network">
-          <img src="images/telegram.svg" width="28" height="22" alt="Логотип Телеграмма">
-        </li>
-      </ul>
-    </div>
-    <hr class="footer__hr">
-    <div class="footer__network-academy">
-      <a class="footer__network-academy-link explaining-text-big" href="#">
-        HTML Academy
-      </a>
-      <img src="images/logo_html.svg" width="27" height="34" alt="Логотип HTML Академии">
+    <div class="footer__block">
+      <img class="footer__image" src="images/logo_text_mobile.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
+      <hr class="footer__hr">
+      <div class="footer__social-network">
+        <ul class="footer__social-network-list">
+          <li class="footer__social-network-item ">
+            <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип Вконтакте">
+          </li>
+          <li class="footer__social-network-item">
+            <img src="images/youtube.svg" width="28" height="22" alt="Логотип Ютуба">
+          </li>
+          <li class="footer__social-network">
+            <img src="images/telegram.svg" width="28" height="22" alt="Логотип Телеграмма">
+          </li>
+        </ul>
+      </div>
+      <hr class="footer__hr">
+      <div class="footer__network-academy">
+        <a class="footer__network-academy-link explaining-text-big" href="#">
+          HTML Academy
+        </a>
+        <img src="images/logo_html.svg" width="27" height="34" alt="Логотип HTML Академии">
+      </div>
     </div>
   </footer>
 

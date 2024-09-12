@@ -16,6 +16,11 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 
@@ -24,6 +29,11 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .subtitle-text-normal {
@@ -60,7 +70,6 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-
     font-size: 60px;
     line-height: 60px;
   }
@@ -71,6 +80,11 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .secondary-subtitle-small {
@@ -78,6 +92,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .secondary-subtitle-normal {
@@ -88,7 +106,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
   }
 }
 
@@ -126,6 +144,11 @@
   font-family: $second-font;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .text-input-button {
@@ -157,6 +180,11 @@
   font-family: $primary-font;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .explaining-text-big {
@@ -176,6 +204,11 @@
   font-family: $primary-font;
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .explaining-text-standard {

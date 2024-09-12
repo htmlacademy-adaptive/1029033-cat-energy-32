@@ -3,6 +3,7 @@
   position: relative;
   margin-bottom: 40px;
 
+
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0;
@@ -33,9 +34,10 @@
     right: 0;
 
     @media (min-width: $tablet-width) {
-      min-width: 456px;
-      top: 16px;
-      right: -30px;
+      width: 100%;
+      top: 15px;
+      left: 280px;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
@@ -46,26 +48,29 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    display: inline-block;
+    min-width: 202px;
+    padding: 0 40px;
     font-size: 32px;
     line-height: 32px;
+    background-color: #ffffff;
 
     &::after {
       content: "";
       display: inline-block;
-      min-width: 30px;
+      width: 100%;
       height: 2px;
       background-color: #68b738;
       position: absolute;
-      top: 16px;
-      left: -30;
+      top: 15px;
+      left: -300px;
+      z-index: -2;
     }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    padding-left: 0;
 
     &::after {
       content: "";
@@ -75,7 +80,7 @@
       background-color: #68b738;
       position: absolute;
       top: 16px;
-      left: -110;
+      left: -110px;
     }
   }
 }
@@ -97,7 +102,7 @@
   }
 }
 
-.promotions-subscribe__button {
+.promotions__subscribe-button {
   color: #ffffff;
   text-transform: uppercase;
   background-color: $basic_green;
@@ -122,6 +127,7 @@
     margin: 0 auto;
     font-size: 24px;
     line-height: 32px;
+    padding: 67px 0 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,7 +137,7 @@
   }
 }
 
-.promotions-subscribe__input {
+.promotions__subscribe-input {
   box-sizing: border-box;
   min-width: 280px;
   min-height: 56px;

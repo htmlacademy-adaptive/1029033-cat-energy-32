@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.main-header-toggle--open {
+.main-header__toggle--open {
   width: 24px;
   height: 24px;
   background-image: url("../../icons/wrapper.svg");
@@ -65,7 +65,7 @@
   display: none;
 }
 
-.main-header-toggle--close {
+.main-header__toggle--close {
   width: 24px;
   height: 24px;
   background-image: url("../../icons/wrapper_close.svg");
@@ -103,6 +103,14 @@
   padding-left: 20%;
   padding-right: 65px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 16px 0;
   }
@@ -114,6 +122,14 @@
 }
 
 .logo-icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: 1 / 1;
     display: block;

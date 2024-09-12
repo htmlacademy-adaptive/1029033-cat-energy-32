@@ -19,12 +19,12 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 30px;
+    padding: 65px 0 84px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 85px 0 90px;
+    padding: 40px 0 90px;
     border-bottom: none;
   }
 }
