@@ -162,7 +162,7 @@
     order: 1;
   }
 
-  &:hover {
+  &:active {
     opacity: 0.3;
 
     &::before {
@@ -317,7 +317,7 @@
     order: 1;
   }
 
-  &:hover {
+  &:active {
     opacity: 0.3;
 
     &::before {

@@ -208,6 +208,15 @@
   border: 1px solid $basic_green;
   padding: 10px 109px;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
