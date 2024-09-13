@@ -3,7 +3,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    width: 708px;
+    margin: 0 auto;
     padding-bottom: 46px;
     border-bottom: 1px solid #e6e6e6;
   }
@@ -23,8 +24,6 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
     margin-bottom: 32px;
   }
 }
@@ -38,10 +37,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    grid-template-rows: 280px 280px;
+    grid-template-rows: auto auto;
     gap: 37px 153px;
-    width: 708px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

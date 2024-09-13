@@ -1,5 +1,3 @@
-
-
 .cooperation__block {
   display: flex;
   justify-content: space-between;
@@ -19,6 +17,14 @@
     background-color: #ffffff;
     position: absolute;
     margin-top: 95px;
+  }
+}
+
+.cooperation-catalog {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
 

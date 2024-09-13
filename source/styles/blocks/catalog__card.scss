@@ -30,7 +30,7 @@
     padding: 0 37px 40px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 240px auto 40px;
+    grid-template-rows: auto auto auto;
     border: none;
     background-image: linear-gradient(#ffffff 15%, #f2f2f2 15px 85%);
   }
@@ -40,8 +40,8 @@
     height: 511px;
     padding: 0 38px 40px;
     display: grid;
-    grid-template-columns: 169px;
-    grid-template-rows: 210px auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
   }
 }
 
@@ -101,6 +101,10 @@
     grid-area: 2 / 1;
     width: 250px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .card__description-subtitle {
@@ -112,15 +116,16 @@
 
   @media (min-width: $tablet-width) {
     width: 135px;
-    padding: 0 55px 0 57px;
+    margin: 0 auto;
+    padding-top: 22px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 140px;
-    padding: 12px 14px 0 15px;
-    text-align: center;
+    margin: 0 auto;
+    padding-top: 12px;
+    margin-bottom: 23px;
   }
 }
 
@@ -136,10 +141,12 @@
     grid-area: 1 / 1;
     height: 210px;
     place-self: start center;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     height: 210px;
+    padding-top: 10px;
   }
 }
 
@@ -171,7 +178,7 @@
 
     @media (min-width: $desktop-width) {
       margin-left: 57px;
-      margin-top: 35px;
+      margin-top: 45px;
     }
   }
 

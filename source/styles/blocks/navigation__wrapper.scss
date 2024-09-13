@@ -25,23 +25,30 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 14px 0 16px;
     background-color: transparent;
   }
 }
 
 .wrapper__link--active {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: 2px solid #68b738;
     align-self: self-end;
-    margin-bottom: 9px;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+    padding-bottom: 7px;
+    margin-bottom: 2px;
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.catalog-active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #68b738;
   }
 }
 
@@ -56,6 +63,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     min-width: 64px;
+    min-height: 50px;
   }
 }
 

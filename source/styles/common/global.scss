@@ -87,6 +87,18 @@
   }
 }
 
+.secondary-subtitle-big-catalog {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 .secondary-subtitle-small {
   font-family: $second-font;
   font-size: 14px;
@@ -107,6 +119,18 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+.secondary-subtitle-normal-catalog {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

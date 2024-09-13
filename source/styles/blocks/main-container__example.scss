@@ -8,8 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#ffffff 31%, #eaeaea 31% 69%);
-    padding: 69px 0 0;
+    background-image: linear-gradient(#ffffff 25%, #eaeaea 25% 75%);
+    padding: 25px 0 0;
   }
 }
 
@@ -83,7 +83,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-bottom: 55px;
-    gap: 38px;
+    gap: 43px;
   }
 }
 
@@ -114,7 +114,7 @@
     min-height: 37px;
     border: 1px solid #cdcdcd;
     border-radius: 4px;
-    padding: 15px 25px 20px 27px;
+    padding: 15px 29px 20px 27px;
   }
 }
 

@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 }
 
@@ -21,12 +21,12 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 95px;
+    padding: 65px 0 84px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 0 90px;
+    padding: 70px 0 84px;
     border-bottom: none;
   }
 }

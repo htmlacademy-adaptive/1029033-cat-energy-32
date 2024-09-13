@@ -9,7 +9,8 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     min-height: 50px;
-    margin: 17px 34px 0 30px;
+    width: 708px;
+    margin: 25px auto 0;
     border-bottom: none;
     display: flex;
     justify-content: start;
@@ -17,8 +18,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
-    padding: 40px 0 14px;
+    margin: 55px auto 0;
     display: grid;
     grid-template-columns: 70px 14px 118px 1018;
     grid-template-rows: auto;
