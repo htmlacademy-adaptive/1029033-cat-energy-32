@@ -55,6 +55,19 @@
   }
 }
 
+.footer__social-network-link:hover .footer__social-network-image {
+  fill: #68b738;
+}
+
+.footer__social-network-ink:focus-visible .footer__social-network-image {
+  fill: #68b738;
+}
+
+.footer__social-network-link:active .footer__social-network-image {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
 .footer__network-academy {
   margin-top: 20px;
   display: flex;
@@ -70,7 +83,24 @@
   text-decoration: none;
   color: $special_dark-grey;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }
+}
+
+.footer__network-academy-link-image:hover .footer__network-academy-image {
+  fill: #68b738;
+}
+
+.footer__network-academy-link-image:focus-visible .footer__network-academy-image {
+  fill: #68b738;
+}
+
+.footer__network-academy-link-image:active .footer__network-academy-image {
+  fill: #68b738;
+  opacity: 0.3;
 }

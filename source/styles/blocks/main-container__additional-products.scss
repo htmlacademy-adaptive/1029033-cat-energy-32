@@ -232,7 +232,7 @@
 .additional-products__gift {
   margin: 0 20px;
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   background-image: url("../../images/promo_background_mobile@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -261,14 +261,15 @@
 
   @media (min-width: $tablet-width) {
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../../images/promo_background_tablet@2x.png");
+    background-size: cover;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 288px;
+    min-height: 288px;
     background-image: url("../../images/promo_background_desktop@2x.png");
   }
 }
@@ -286,7 +287,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 42px 43px;
+    padding: 185px 42px 0;
     text-align: center;
   }
 }
