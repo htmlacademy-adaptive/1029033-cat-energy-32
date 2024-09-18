@@ -22,6 +22,24 @@
   }
 }
 
+.footer__link {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__image {
   margin: 0 76px 15px;
 
