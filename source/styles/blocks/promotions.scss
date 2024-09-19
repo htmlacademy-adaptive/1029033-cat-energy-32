@@ -1,6 +1,9 @@
 .promotions {
-  padding: 0 20px;
   position: relative;
+}
+
+.promotions__block {
+  padding: 0 20px;
   margin-bottom: 40px;
 
 
@@ -9,6 +12,19 @@
     padding: 0;
     margin: 0 auto;
     margin-bottom: 80px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      top: 14px;
+      right: 0;
+      left: 0;
+      z-index: -2;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -16,36 +32,25 @@
     padding: 0;
     margin: 0 auto;
     margin-bottom: 100px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      position: absolute;
+      top: 16px;
+      right: 0;
+      left: 0;
+      z-index: -2;
+    }
   }
 }
 
 .promotions__subtitle {
   color: #000000;
   margin: 0;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    min-width: 108px;
-    height: 2px;
-    background-color: #68b738;
-    position: absolute;
-    top: 12px;
-    right: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      top: 15px;
-      left: 280px;
-      z-index: -1;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 1040px;
-      top: 16px;
-      right: -110px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -54,35 +59,13 @@
     font-size: 32px;
     line-height: 32px;
     background-color: #ffffff;
-
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-      background-color: #68b738;
-      position: absolute;
-      top: 15px;
-      left: -300px;
-      z-index: -2;
-    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    padding: 0 40px 0 0;
-
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 70px;
-      height: 2px;
-      background-color: #68b738;
-      position: absolute;
-      top: 16px;
-      left: -110px;
-    }
+    margin-left: -40px;
+    padding: 0 40px;
   }
 }
 

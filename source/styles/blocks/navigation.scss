@@ -1,0 +1,19 @@
+.closenav {
+  display: none;
+}
+
+.navigation {
+  margin: 0;
+  font-family: $second-font;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+}
+

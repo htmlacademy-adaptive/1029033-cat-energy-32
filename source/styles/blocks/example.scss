@@ -1,4 +1,4 @@
-.main-container__example {
+.example {
   background-color: #eaeaea;
   padding: 25px 20px 37px;
 
@@ -37,7 +37,7 @@
   }
 }
 
-.example__relationship-subtitle {
+.example__relationship-item-subtitle {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -67,7 +67,7 @@
   }
 }
 
-.example__relationship {
+.example__relationship-item {
   display: flex;
   justify-content: space-between;
   gap: 32px;
@@ -87,11 +87,11 @@
   }
 }
 
-.example__relationship-text {
+.example__relationship-item-text {
   color: $special_dark-grey;
 }
 
-.relationship-subtitle-left {
+.example__relationship-item-subtitle-left {
   @media (min-width: $tablet-width) {
     min-width: 162px;
     min-height: 72px;
@@ -99,7 +99,7 @@
   }
 }
 
-.relationship-subtitle-right {
+.example__relationship-item-subtitle-right {
   @media (min-width: $tablet-width) {
     min-width: 162px;
     min-height: 72px;
@@ -118,7 +118,7 @@
   }
 }
 
-.relationship-text-left {
+.example__relationship-item-text-left {
   width: 77px;
   min-height: 24px;
   position: absolute;
@@ -151,7 +151,7 @@
   }
 }
 
-.relationship-text-right {
+.example__relationship-item-text-right {
   width: 87px;
   min-height: 31px;
   position: absolute;
@@ -435,7 +435,7 @@
   }
 }
 
-.example__relationship-block {
+.example__relationship {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

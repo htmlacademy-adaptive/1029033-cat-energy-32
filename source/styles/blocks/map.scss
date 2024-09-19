@@ -1,11 +1,11 @@
-.main-container__map-block {
+.map__block {
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
 }
 
-.main-container__map-iframe {
+.map__iframe {
   width: 100%;
   min-height: 362px;
   border: none;

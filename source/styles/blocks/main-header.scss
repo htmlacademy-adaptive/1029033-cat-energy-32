@@ -1,6 +1,6 @@
 .main-header {
   margin: 0;
-  padding: 10px 21px 16px 20px;
+  padding: 13px 21px 13px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,24 +30,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-  }
-}
-
-.closenav {
-  display: none;
-}
-
-.main-header__navigation {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-    justify-self: end;
   }
 }
 
