@@ -70,6 +70,14 @@
 }
 
 .promotions__subscribe {
+  &:valid {
+    border: 2px solid #cdcdcd;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -93,6 +101,15 @@
   border: 1px solid $basic_green;
   padding: 14px 81px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;

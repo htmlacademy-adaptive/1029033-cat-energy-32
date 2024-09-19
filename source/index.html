@@ -16,14 +16,14 @@
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__link logo-icon" href="#">
+    <a class="main-header__link main-header__logo-icon" href="index.html">
       <picture class="main-header__picture-icon">
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic_desktop.svg">
         <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
         <img class="main-header__image" src="images/logo_icon.svg" width="33" height="38" alt="Логотип кэт энерджи">
       </picture>
     </a>
-    <a class="main-header__link logo-text" href="#">
+    <a class="main-header__link main-header__logo-text" href="index.html">
       <picture class="main-header__picture-text">
         <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_desktop.svg">
         <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_desktop.svg">
@@ -33,10 +33,10 @@
     <button class="main-header__toggle main-header__toggle--open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <button class="main-header__toggle main-header__toggle--close toggleclose" type="button">
+    <button class="main-header__toggle main-header__toggle--close main-header__toggleclose" type="button">
       <span class="visually-hidden">Закрыть меню</span>
     </button>
-    <nav class="main-header__navigation navigation closenav">
+    <nav class="main-header__navigation navigation main-header__closenav">
       <ul class="navigation__wrapper wrapper">
         <li class="wrapper__item">
           <a class="wrapper__link wrapper__link--active subtitle-text-wrapper" href="index.html">
@@ -213,7 +213,7 @@
   </main>
   <footer class="footer">
     <div class="footer__block">
-      <a class="footer__link" href="#">
+      <a class="footer__link" href="index.html">
         <img class="footer__image" src="images/logo_text_mobile.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
       </a>
       <hr class="footer__hr">
@@ -267,15 +267,15 @@
     let toggleClose = document.querySelector('.main-header__toggle--close');
     let navOpen = document.querySelector('.main-header__navigation');
     toggleOpen.onclick = function () {
-      toggleOpen.classList.add('toggleclose');
-      toggleClose.classList.remove('toggleclose');
-      navOpen.classList.remove('closenav');
+      toggleOpen.classList.add('main-header__toggleclose');
+      toggleClose.classList.remove('main-header__toggleclose');
+      navOpen.classList.remove('main-header__closenav');
     }
 
     toggleClose.onclick = function () {
-      toggleOpen.classList.remove('toggleclose');
-      toggleClose.classList.add('toggleclose');
-      navOpen.classList.add('closenav');
+      toggleOpen.classList.remove('main-header__toggleclose');
+      toggleClose.classList.add('main-header__toggleclose');
+      navOpen.classList.add('main-header__closenav');
     }
   </script>
 </body>

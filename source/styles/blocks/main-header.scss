@@ -25,7 +25,11 @@
   }
 }
 
-.header-catalog {
+.main-header__closenav {
+  display: none;
+}
+
+.main-header-catalog {
   padding: 13px 21px 16px 20px;
 
   @media (min-width: $tablet-width) {
@@ -51,7 +55,7 @@
   }
 }
 
-.toggleclose {
+.main-header__toggleclose {
   display: none;
 }
 
@@ -89,7 +93,7 @@
   }
 }
 
-.logo-text {
+.main-header__logo-text {
   padding-left: 20%;
   padding-right: 65px;
 
@@ -111,7 +115,7 @@
   }
 }
 
-.logo-icon {
+.main-header__logo-icon {
   &:hover {
     opacity: 0.8;
   }
