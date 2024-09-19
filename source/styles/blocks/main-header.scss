@@ -1,6 +1,6 @@
 .main-header {
   margin: 0;
-  padding: 13px 21px 14px 20px;
+  padding: 10px 21px 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +22,14 @@
     display: grid;
     grid-template-columns: 70px 14px 118px 1018;
     grid-template-rows: auto;
+  }
+}
+
+.header-catalog {
+  padding: 13px 21px 16px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 

@@ -275,6 +275,7 @@
     width: 245px;
     min-height: 288px;
     background-image: url("../../images/promo_background_desktop@2x.png");
+    background-size: contain;
   }
 }
 
@@ -291,7 +292,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 42px 0;
+    padding: 0;
+    margin: 185px 42px 0;
     text-align: center;
   }
 }
