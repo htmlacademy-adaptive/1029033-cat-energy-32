@@ -13,7 +13,8 @@
     background-color: #68b738;
     position: absolute;
     top: 35px;
-    right: -286px;
+    left: 0;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
@@ -38,7 +39,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding: 0 60px 25px;
+    padding: 0 60px 27px;
 
     &::after {
       content: "";
@@ -47,7 +48,7 @@
       height: 2px;
       background-color: #68b738;
       position: absolute;
-      top: 16px;
+      top: 17px;
       right: 0;
       left: 0;
     }
@@ -59,8 +60,9 @@
   color: #000000;
   margin: 0;
   padding: 25px 0 35px 20px;
-  border-bottom: 1px solid #ebebeb;
   position: relative;
+  background-color: #ffffff;
+  margin-right: 34px;
 
 
   @media (min-width: $tablet-width) {
@@ -70,6 +72,7 @@
     margin: 0 auto;
     padding: 0 40px 80px;
     border-bottom: none;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,19 +81,24 @@
     min-width: 301px;
     margin: 0 auto;
     margin-left: -40px;
-    padding: 0 40px 80px;
+    margin-right: 0;
+    padding: 0 40px 77px;
   }
 }
 
 .additional-products__block {
-  @media (min-width: $tablet-width) {
+  margin: 0 20px;
+  border-top: 1px solid #ebebeb;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
-
+    border-top: none;
+    margin: 0;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -98,7 +106,7 @@
 
 .additional-products__list {
   list-style: none;
-  padding: 13px 20px 22px;
+  padding: 13px 0 22px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -231,14 +239,13 @@
 }
 
 .additional-products__gift {
-  margin: 0 20px;
   width: 280px;
   min-height: 290px;
-  background-image: url("../../images/promo_background_mobile@2x.png");
+  background-image: url("../../images/promo_background_mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  background-color: #68b738;
+
 
   &::before {
     content: "";
@@ -264,7 +271,7 @@
   @media (min-width: $tablet-width) {
     width: 707px;
     min-height: 200px;
-    background-image: url("../../images/promo_background_tablet@2x.png");
+    background-image: url("../../images/promo_background_tablet@2x.jpg");
     background-size: cover;
     margin: 0;
   }
@@ -272,7 +279,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
-    background-image: url("../../images/promo_background_desktop@2x.png");
+    background-image: url("../../images/promo_background_desktop@2x.jpg");
     background-size: contain;
   }
 }

@@ -46,7 +46,7 @@
   }
 }
 
-.catalog-active {
+.wrapper__catalog-active {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #68b738;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-.wrapper-link-catalog {
+.wrapper__link-catalog {
   @media (min-width: $desktop-width) {
     color: #000000;
   }

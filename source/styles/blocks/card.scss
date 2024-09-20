@@ -112,6 +112,10 @@
 .card__button {
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $basic_green;
   border: none;
   min-height: 40px;
