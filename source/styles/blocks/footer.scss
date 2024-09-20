@@ -23,6 +23,9 @@
 }
 
 .footer__link {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
@@ -41,7 +44,7 @@
 }
 
 .footer__image {
-  margin: 0 76px 15px;
+  margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
