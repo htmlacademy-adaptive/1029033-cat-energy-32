@@ -1,1 +1,242 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.title-text {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+
+.title-text-small {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.subtitle-text-normal {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.subtitle-text-item {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.subtitle-text-big {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.secondary-subtitle-big {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.secondary-subtitle-big-catalog {
+  font-family: $second-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.secondary-subtitle-small {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.secondary-subtitle-normal {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.secondary-subtitle-normal-catalog {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+.subtitle-text-wrapper {
+  font-family: $second-font;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.secondary-subtitle-basic {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.input-text {
+  font-family: $second-font;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-main-button {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.text-input-button {
+  font-family: $second-font;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.text-secondary-button {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.explaining-text-basic {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+.explaining-text-normal {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.explaining-text-big {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.explaining-text {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.explaining-text-small {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.explaining-text-standard {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+}

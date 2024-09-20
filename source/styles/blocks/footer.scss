@@ -1,0 +1,127 @@
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer__block {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px;
+    min-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 69px 0;
+    min-height: 37px;
+  }
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__image {
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__hr {
+  margin: 0;
+  border: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__social-network-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    margin-left: 160px;
+    margin-right: 125px;
+  }
+}
+
+.footer__social-network-link:hover .footer__social-network-image {
+  fill: #68b738;
+}
+
+.footer__social-network-ink:focus-visible .footer__social-network-image {
+  fill: #68b738;
+}
+
+.footer__social-network-link:active .footer__social-network-image {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
+.footer__network-academy {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__network-academy-link {
+  text-decoration: none;
+  color: $special_dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}
+
+.footer__network-academy-link-image:hover .footer__network-academy-image {
+  fill: #68b738;
+}
+
+.footer__network-academy-link-image:focus-visible .footer__network-academy-image {
+  fill: #68b738;
+}
+
+.footer__network-academy-link-image:active .footer__network-academy-image {
+  fill: #68b738;
+  opacity: 0.3;
+}

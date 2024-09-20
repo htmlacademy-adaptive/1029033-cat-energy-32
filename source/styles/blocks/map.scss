@@ -1,0 +1,24 @@
+.map__block {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.map__iframe {
+  width: 100%;
+  min-height: 362px;
+  border: none;
+  display: block;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+    min-height: 400px;
+  }
+}
