@@ -238,6 +238,10 @@
 }
 
 .advantages__quick-cooking-text {
+  @media (min-width: $tablet-width) {
+    width: 225px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 224px;
   }

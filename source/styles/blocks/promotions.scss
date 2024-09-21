@@ -6,6 +6,17 @@
   padding: 0 20px;
   margin-bottom: 40px;
 
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 108px;
+    height: 2px;
+    background-color: #68b738;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -40,7 +51,7 @@
       height: 2px;
       background-color: #68b738;
       position: absolute;
-      top: 16px;
+      top: 19px;
       right: 0;
       left: 0;
       z-index: -2;

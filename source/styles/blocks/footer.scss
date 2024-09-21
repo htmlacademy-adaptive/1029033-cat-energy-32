@@ -3,7 +3,7 @@
 }
 
 .footer__block {
-  padding: 40px 20px;
+  padding: 38px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -44,7 +44,7 @@
 }
 
 .footer__image {
-  margin: 0 0 15px;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -67,6 +67,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
+  margin: 20px 0 15px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -90,7 +91,7 @@
 }
 
 .footer__network-academy {
-  margin-top: 20px;
+  margin-top: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
