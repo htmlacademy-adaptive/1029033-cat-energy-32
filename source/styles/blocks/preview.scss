@@ -15,8 +15,8 @@
   min-height: 302px;
   background-image:
     image-set(
-      url("../../images/hero-background-mobile@1x.png"),
-      url("../../images/hero-background-mobile@2x.png")
+      url("../../images/hero-background-mobile@1x.png") 1x,
+      url("../../images/hero-background-mobile@2x.png") 2x
     );
   background-repeat: no-repeat;
   background-size: cover;
