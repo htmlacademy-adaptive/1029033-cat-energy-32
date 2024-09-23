@@ -1,14 +1,36 @@
 .example {
+  padding: 5px 20px 37px;
+  position: relative;
   background-color: #eaeaea;
-  padding: 25px 20px 37px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: #eaeaea;
+    z-index: -2;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 620px;
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 160px;
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 57%, #eaeaea 43%);
-    padding-bottom: 101px;
+    padding: 25px 20px 101px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#ffffff 25%, #eaeaea 25% 75%);
     padding: 25px 0 0;
   }
 }
@@ -208,6 +230,121 @@
   }
 }
 
+.example__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    mask-image: url("../../icons/double-triangle-arrow.svg");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 18px;
+    width: 24px;
+  }
+
+  &:hover {
+    border-color: #68b738;
+
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background-color: #666666;
+      mask-image: url("../../icons/double-triangle-arrow.svg");
+      mask-size: 24px 18px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      height: 18px;
+      width: 24px;
+    }
+
+    &:hover {
+      border-color: #68b738;
+
+      &::after {
+        background-color: #68b738;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      background-color: #666666;
+      mask-image: url("../../icons/double-triangle-arrow.svg");
+      mask-size: 24px 18px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+      height: 18px;
+      width: 24px;
+    }
+
+    &:hover {
+      border-color: #68b738;
+
+      &::after {
+        background-color: #68b738;
+      }
+    }
+  }
+}
+
 .example__slider {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -226,8 +363,8 @@
     width: 4px;
   }
 
-  &:has(.example-button:hover)::before {
-    background-color: #008000;
+  &:has(.example__button:hover)::before {
+    background-color: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -251,8 +388,8 @@
       width: 4px;
     }
 
-    &:has(.example-button:hover)::before {
-      background-color: #008000;
+    &:has(.example__button:hover)::before {
+      background-color: #68b738;
     }
   }
 
@@ -277,8 +414,8 @@
       width: 4px;
     }
 
-    &:has(.example-button:hover)::before {
-      background-color: #008000;
+    &:has(.example__button:hover)::before {
+      background-color: #68b738;
     }
   }
 }
@@ -316,121 +453,6 @@
 
     &--leftShift {
       right: 100%;
-    }
-  }
-}
-
-.example__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border-radius: 50%;
-  border: 2px solid #666666;
-  z-index: 2;
-
-  &::after {
-    content: "";
-    background-color: #666666;
-    mask-image: url("../../icons/double-triangle-arrow.svg");
-    mask-size: 24px 18px;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    height: 18px;
-    width: 24px;
-  }
-
-  &:hover {
-    border-color: #008000;
-
-    &::after {
-      background-color: #008000;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border-radius: 50%;
-    border: 2px solid #666666;
-    z-index: 2;
-
-    &::after {
-      content: "";
-      background-color: #666666;
-      mask-image: url("../../icons/double-triangle-arrow.svg");
-      mask-size: 24px 18px;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 3;
-      height: 18px;
-      width: 24px;
-    }
-
-    &:hover {
-      border-color: #008000;
-
-      &::after {
-        background-color: #008000;
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border-radius: 50%;
-    border: 2px solid #666666;
-    z-index: 2;
-
-    &::after {
-      content: "";
-      background-color: #666666;
-      mask-image: url("../../icons/double-triangle-arrow.svg");
-      mask-size: 24px 18px;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 3;
-      height: 18px;
-      width: 24px;
-    }
-
-    &:hover {
-      border-color: #008000;
-
-      &::after {
-        background-color: #008000;
-      }
     }
   }
 }
