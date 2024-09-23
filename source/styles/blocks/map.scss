@@ -11,14 +11,29 @@
   border: none;
   display: block;
   position: relative;
+  background-image:
+    image-set(
+      url("../../images/bacground_map_mobile@1x.jpg") 1x,
+      url("../../images/bacground_map_mobile@2x.jpg") 2x
+    );
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
     z-index: -1;
+    background-image:
+      image-set(
+        url("../../images/bacground_map_tablet@1x.jpg") 1x,
+        url("../../images/bacground_map_tablet@2x.jpg") 2x
+      );
   }
 
   @media (min-width: $desktop-width) {
     z-index: -1;
     min-height: 400px;
+    background-image:
+      image-set(
+        url("../../images/bacground_map_desktop.jpg@1x.jpg") 1x,
+        url("../../images/bacground_map_desktop.jpg@2x.jpg") 2x
+      );
   }
 }

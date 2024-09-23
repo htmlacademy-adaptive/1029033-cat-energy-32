@@ -21,10 +21,14 @@
       margin: 50px 0 25px;
       background-image: url("../../icons/show_more_tablet.svg");
       justify-self: center;
+      position: static;
+      background-color: #ffffff;
     }
 
     @media (min-width: $desktop-width) {
       margin: 50px 0 41px;
+      position: static;
+      background-color: #ffffff;
     }
   }
 
