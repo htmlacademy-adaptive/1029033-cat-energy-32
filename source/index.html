@@ -34,7 +34,7 @@
           <img class="main-header__image" src="images/logo_text.svg" width="101" height="18" alt="Надпись кэт энерджи">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--open" type="button">
+      <button class="main-header__toggle main-header__toggle--open main-header__toggle--off" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <button class="main-header__toggle main-header__toggle--close main-header__toggleclose" type="button">
@@ -275,10 +275,13 @@
       let toggleOpen = document.querySelector('.main-header__toggle--open');
       let toggleClose = document.querySelector('.main-header__toggle--close');
       let navOpen = document.querySelector('.main-header__navigation');
+      let wrapperStatic = document.querySelector('.navigation__wrapper-static');
 
       if (toggleClose.classList.contains('main-header__toggleclose')) {
         toggleClose.classList.add('main-header__toggleclose');
         navOpen.classList.add('main-header__closenav');
+        wrapperStatic.classList.remove('navigation__wrapper-static');
+        toggleOpen.classList.remove('main-header__toggle--off');
       }
 
       toggleOpen.addEventListener('click', function () {
