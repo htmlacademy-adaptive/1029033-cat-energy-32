@@ -236,8 +236,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 91px;
-    height: 40px;
+    padding: 8px 91px;
+    min-height: 40px;
   }
 }
 

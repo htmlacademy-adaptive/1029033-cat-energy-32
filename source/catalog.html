@@ -34,10 +34,10 @@
           <img class="main-header__image" src="images/logo_text.svg" width="101" height="18" alt="Надпись кэт энерджи">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--open main-header__toggleclose" type="button">
+      <button class="main-header__toggle main-header__toggle--open main-header__toggle--off" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-header__toggle main-header__toggle--close" type="button">
+      <button class="main-header__toggle main-header__toggle--close main-header__toggleclose" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </div>
@@ -452,20 +452,31 @@
   </footer>
 
   <script>
-    let toggleOpen = document.querySelector('.main-header__toggle--open');
-    let toggleClose = document.querySelector('.main-header__toggle--close');
-    let navOpen = document.querySelector('.main-header__navigation');
-    toggleOpen.onclick = function () {
-      toggleOpen.classList.add('main-header__toggleclose');
-      toggleClose.classList.remove('main-header__toggleclose');
-      navOpen.classList.remove('main-header__closenav');
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      let toggleOpen = document.querySelector('.main-header__toggle--open');
+      let toggleClose = document.querySelector('.main-header__toggle--close');
+      let navOpen = document.querySelector('.main-header__navigation');
+      let wrapperStatic = document.querySelector('.navigation__wrapper-static');
 
-    toggleClose.onclick = function () {
-      toggleOpen.classList.remove('main-header__toggleclose');
-      toggleClose.classList.add('main-header__toggleclose');
-      navOpen.classList.add('main-header__closenav');
-    }
+      if (toggleClose.classList.contains('main-header__toggleclose')) {
+        toggleClose.classList.add('main-header__toggleclose');
+        navOpen.classList.add('main-header__closenav');
+        wrapperStatic.classList.remove('navigation__wrapper-static');
+        toggleOpen.classList.remove('main-header__toggle--off');
+      }
+
+      toggleOpen.addEventListener('click', function () {
+        toggleOpen.classList.add('main-header__toggleclose');
+        toggleClose.classList.remove('main-header__toggleclose');
+        navOpen.classList.remove('main-header__closenav');
+      });
+
+      toggleClose.addEventListener('click', function () {
+        toggleOpen.classList.remove('main-header__toggleclose');
+        toggleClose.classList.add('main-header__toggleclose');
+        navOpen.classList.add('main-header__closenav');
+      });
+    });
   </script>
 </body>
 

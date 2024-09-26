@@ -15,7 +15,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body-index">
 
   <header class="main-header">
 
@@ -34,10 +34,10 @@
           <img class="main-header__image" src="images/logo_text.svg" width="101" height="18" alt="Надпись кэт энерджи">
         </picture>
       </a>
-      <button class="main-header__toggle main-header__toggle--open main-header__toggleclose" type="button">
+      <button class="main-header__toggle main-header__toggle--open main-header__toggle--off" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <button class="main-header__toggle main-header__toggle--close" type="button">
+      <button class="main-header__toggle main-header__toggle--close main-header__toggleclose" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
     </div>
@@ -71,6 +71,9 @@
         <span class="preview__text title-text-small">
           Занялся собой? Займись котом!
         </span>
+        <a class="preview__button button-basic text-main-button" href="#">
+          Подобрать программу
+        </a>
       </div>
       <picture>
         <source media="(min-width: 1440px)" type="image/webp" srcset="images/cat_energy_desktop@1x.webp, images/cat_energy_desktop@2x.webp 2x" width="552" height="499">
@@ -80,9 +83,6 @@
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/cat_energy_tablet@1x.png 1x, images/cat_energy_tablet@2x.png 2x">
         <img class="preview__image" src="images/cat_energy@1x.png" srcset="images/cat_energy@2x.png 2x" width="280" height="270" alt="Кэт энерджи про со вкусом курицы">
       </picture>
-      <a class="preview__button button-basic text-main-button" href="#">
-        Подобрать программу
-      </a>
     </section>
     <section class="main-container__properties properties">
       <div class="properties__weight-loss">
@@ -271,20 +271,31 @@
   </footer>
 
   <script>
-    let toggleOpen = document.querySelector('.main-header__toggle--open');
-    let toggleClose = document.querySelector('.main-header__toggle--close');
-    let navOpen = document.querySelector('.main-header__navigation');
-    toggleOpen.onclick = function () {
-      toggleOpen.classList.add('main-header__toggleclose');
-      toggleClose.classList.remove('main-header__toggleclose');
-      navOpen.classList.remove('main-header__closenav');
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      let toggleOpen = document.querySelector('.main-header__toggle--open');
+      let toggleClose = document.querySelector('.main-header__toggle--close');
+      let navOpen = document.querySelector('.main-header__navigation');
+      let wrapperStatic = document.querySelector('.navigation__wrapper-static');
 
-    toggleClose.onclick = function () {
-      toggleOpen.classList.remove('main-header__toggleclose');
-      toggleClose.classList.add('main-header__toggleclose');
-      navOpen.classList.add('main-header__closenav');
-    }
+      if (toggleClose.classList.contains('main-header__toggleclose')) {
+        toggleClose.classList.add('main-header__toggleclose');
+        navOpen.classList.add('main-header__closenav');
+        wrapperStatic.classList.remove('navigation__wrapper-static');
+        toggleOpen.classList.remove('main-header__toggle--off');
+      }
+
+      toggleOpen.addEventListener('click', function () {
+        toggleOpen.classList.add('main-header__toggleclose');
+        toggleClose.classList.remove('main-header__toggleclose');
+        navOpen.classList.remove('main-header__closenav');
+      });
+
+      toggleClose.addEventListener('click', function () {
+        toggleOpen.classList.remove('main-header__toggleclose');
+        toggleClose.classList.add('main-header__toggleclose');
+        navOpen.classList.add('main-header__closenav');
+      });
+    });
   </script>
 </body>
 
